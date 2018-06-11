@@ -22,6 +22,32 @@ class TestsController extends Controller
                         ],
                         'trash_recycling_pickup' => [
                             'what_is_your_address' => '121 Freeman AVE'
+                        ],
+                        'favorite_restaurant_inspections' => [
+                            'restaurant_location' => [
+                                "lat" => "38.198825",
+                                "lng" => "-85.783031",
+                                "address" => "",
+                                "description" => ""
+                            ]
+                        ]
+                    ],
+                    'triggerFieldValidations' => [
+                        'favorite_restaurant_inspections' => [
+                            'restaurant_location' => [
+                                "valid" => [
+                                    "lat" => 38.198825,
+                                    "lng" => -85.783031,
+                                    "address" => "",
+                                    "description" => ""
+                                ],
+                                "invalid" => [
+                                    "lat" => "hello",
+                                    "lng" => "no longitude here",
+                                    "address" => "",
+                                    "description" => ""
+                                ]
+                            ]
                         ]
                     ]
                 ]
