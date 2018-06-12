@@ -10,7 +10,7 @@ class NearbyDevelopmentInspectionController extends Controller
 {
 
     /**
-     * This function imports the NearbyDevelopment development_records data from data.louisvilleky.gov's yelp dataset.
+     * This function imports the NearbyDevelopment development_records data from data.louisvilleky.gov's dataset.
      */
     public function dataImport($request, $response, $args)
     {
@@ -46,20 +46,33 @@ class NearbyDevelopmentInspectionController extends Controller
             /**
              * Iterate through the CSV parser and start seeding the $NearbyDevelopments variable that we created earlier with
              * each NearbyDevelopments information. Please note that we use the NearbyDevelopments business ID as the key/index for
-             * each record, this way we can later match the development_records and violations back to the correct business
-             * via this index.
+             * each record, this way we can later match the development_records.
              */
             foreach ($parser as $record) {
                 $NearbyDevelopments[$record[0]] = array(
-                    "business_id" => $record[0],
-                    "name" => $record[1],
-                    "address" => $record[2],
-                    "city" => $record[3],
-                    "state" => $record[4],
-                    "zip" => $record[5],
-                    "latitude" => $record[6],
-                    "longitude" => $record[7],
-                    "phone" => $record[8]
+                  "ID" =>$record[0],
+                  "PERMITNUMBER" =>$record[1],
+                  "PERMITTYPE" =>$record[2],
+                  "PERMITTYPEKEY" =>$record[3],
+                  "STATUS" =>$record[4],
+                  "CONTRACTO" =>$record[5],
+                  "CATEGORYNAM" =>$record[6],
+                  "WORKTYPE" =>$record[7],
+                  "ZONING" =>$record[8],
+                  "SQUAREFEET" =>$record[9],
+                  "PERMITFEE" =>$record[10],
+                  "PROJECTCOSTS" =>$record[11],
+                  "ADDRESS" =>$record[12],
+                  "CITY" =>$record[13],
+                  "STATE" =>$record[14],
+                  "ZIPCODE" =>$record[15],
+                  "GPSX" =>$record[16],
+                  "GPSY" =>$record[17],
+                  "DISTRICT" =>$record[18],
+                  "NEIGHBORHOOD" =>$record[19],
+                  "ISSUEDATE" =>$record[20],
+                  "Latitude" =>$record[21],
+                  "Longitude" =>$record[22]
                 );
             }
 
@@ -69,8 +82,6 @@ class NearbyDevelopmentInspectionController extends Controller
              */
             unset($parser);
             unset($activePermitsCSV);
-
-
 
             /**
              * We delete all the records in the NearbyDevelopment development_records table.
@@ -203,7 +214,7 @@ class NearbyDevelopmentInspectionController extends Controller
                     $development_records = array();
                 }
 
-                /**
+                /** ###
                  * This is where we loop through all the violations within an inspection. All we do here is loop through
                  * it and use array_map to return only the violation descriptions and drop any other fields in the array.
                  * We then add all the violations together to make a list. If there are no violations, then we set the
@@ -223,6 +234,29 @@ class NearbyDevelopmentInspectionController extends Controller
                      * NearbyDevelopment that IFTTT is requesting the data for.
                      */
                     $response_data['data'][] = array(
+                      // "ID" =>$record[0],
+                      // "PERMITNUMBER" =>$record[1],
+                      // "PERMITTYPE" =>$record[2],
+                      // "PERMITTYPEKEY" =>$record[3],
+                      // "STATUS" =>$record[4],
+                      // "CONTRACTO" =>$record[5],
+                      // "CATEGORYNAM" =>$record[6],
+                      // "WORKTYPE" =>$record[7],
+                      // "ZONING" =>$record[8],
+                      // "SQUAREFEET" =>$record[9],
+                      // "PERMITFEE" =>$record[10],
+                      // "PROJECTCOSTS" =>$record[11],
+                      // "ADDRESS" =>$record[12],
+                      // "CITY" =>$record[13],
+                      // "STATE" =>$record[14],
+                      // "ZIPCODE" =>$record[15],
+                      // "GPSX" =>$record[16],
+                      // "GPSY" =>$record[17],
+                      // "DISTRICT" =>$record[18],
+                      // "NEIGHBORHOOD" =>$record[19],
+                      // "ISSUEDATE" =>$record[20],
+                      // "Latitude" =>$record[21],
+                      // "Longitude" =>$record[22]
                         'id' => $date,
                         'inspection_date' => $date,
                         'NearbyDevelopment_name' => $record->name,
