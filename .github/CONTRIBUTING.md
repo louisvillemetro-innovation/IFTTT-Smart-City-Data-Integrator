@@ -18,17 +18,36 @@ A bug report should explain the problem as specifically as possible along with s
 ...is a very useful bug report!
 
 #### Bug Report Template:
-
 ```
-## Description
+**Describe the bug**
+A clear and concise description of what the bug is.
 
-## Steps to Reproduce
+**To Reproduce**
+Steps to reproduce the behavior:
+1. Go to '...'
+2. Click on '....'
+3. Scroll down to '....'
+4. See error
 
-## Acceptance Criteria
+**Expected behavior**
+A clear and concise description of what you expected to happen.
 
-## Test Updates
+**Screenshots**
+If applicable, add screenshots to help explain your problem.
 
-## WIKI/Documentation Updates
+**Desktop (please complete the following information):**
+ - OS: [e.g. iOS]
+ - Browser [e.g. chrome, safari]
+ - Version [e.g. 22]
+
+**Smartphone (please complete the following information):**
+ - Device: [e.g. iPhone6]
+ - OS: [e.g. iOS8.1]
+ - Browser [e.g. stock browser, safari]
+ - Version [e.g. 22]
+
+**Additional context**
+Add any other context about the problem here.
 ```
 
 ### New Feature
@@ -43,17 +62,18 @@ Writing everything out as a traditional user story may seem tedious, but it beco
 
 #### New Feature Template
 ```
-## Description
+**Is your feature request related to a problem? Please describe.**
+A clear and concise description of what the problem is. Ex. I'm always frustrated when [...]
 
-## User Stories
+**Describe the solution you'd like**
+A clear and concise description of what you want to happen.
 
-## Tests
+**Describe alternatives you've considered**
+A clear and concise description of any alternative solutions or features you've considered.
 
-## Documentation
+**Additional context**
+Add any other context or screenshots about the feature request here.
 
-## Pull Requests
-
-## Acceptance Criteria
 ```
 
 ## Pull requests
