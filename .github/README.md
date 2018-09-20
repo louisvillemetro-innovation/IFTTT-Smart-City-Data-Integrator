@@ -19,7 +19,7 @@ Louisville Metro is currently exposing the following data sources to IFTTT:
 **Program Features:**
 The IFTTT Partner program also includes anonymized analytics, application health, performance, API testing and strict branding requirements to ensure a consistent and quality experience for citizens. Additionally it has the ability for a staging environment, private applets for testing, and suggested applets that are frequently created by users. Service implementation documentation is available [here](https://platform.ifttt.com/docs).  
 
-**Cities & Federal Agencies that have signed up to IFTTT due to Louisville's involvement:**
+**Cities & Federal Agencies that have signed up to IFTTT due to Louisville's involvement:**  
 [City of Tampa](https://ifttt.com/tampa)  
 [City of Edmonton, Canada](https://ifttt.com/City_of_Edmonton)  
 [EPA](https://ifttt.com/epa)  
