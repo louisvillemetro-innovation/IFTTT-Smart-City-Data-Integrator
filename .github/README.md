@@ -1,5 +1,7 @@
 # IFTTT Smart City Data Integrator (SCDI) Project
 
+ ![](https://i.imgflip.com/2ifgkg.jpg)
+
 IFTTT Smart City Data Integrator (SCDI) Project is a new medium for governments to deliver light touch digital services, that empower the citizen to customize their interaction with government while maintaining respect for their privacy. The IFTTT service has a tightly controlled user experience that allows us to present a consistent service to our citizens, in an era of poorly designed government app experiences. It enables us to democratize and operationalize data of all kinds to our citizens, solving a historic issue with Open Data, providing immediate and applicable value to the initiative. Louisville is the first government partner on this platform, which initiated the creation and adoption of Data Access Project by IFTTT.
 
 The IFTTT Smart City Data Integrator (SCDI) Project is an _open source_ API middleware that enables citizens to customize city data sources (Open Data, IoT, Smart City data) to fit their digital needs, using the [IFTTT](https://ifttt.com) platform.
