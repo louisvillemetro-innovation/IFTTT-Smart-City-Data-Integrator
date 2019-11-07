@@ -1,6 +1,6 @@
 # IFTTT Smart City Data Integrator (SCDI) Project
 
- ![](https://i.imgflip.com/2ifgkg.jpg)
+## Take your open data, and make apps from it!
 
 IFTTT Smart City Data Integrator (SCDI) Project is a new medium for governments to deliver light touch digital services, that empower the citizen to customize their interaction with government while maintaining respect for their privacy. The IFTTT service has a tightly controlled user experience that allows us to present a consistent service to our citizens, in an era of poorly designed government app experiences. It enables us to democratize and operationalize data of all kinds to our citizens, solving a historic issue with Open Data, providing immediate and applicable value to the initiative. Louisville is the first government partner on this platform, which initiated the creation and adoption of Data Access Project by IFTTT.
 
@@ -76,4 +76,5 @@ which contains the correct variables for each environment.
     proper environment configuration file, as well as the location of those files. In this example, the configuration
     files are located one level up from the root folder, but you can place it anywhere you'd like and point it to the
     proper location in the ```src/dependencies.php``` file.
+    
 3.  You will need to create the tables described in the schema file that we've provided at ```schema/schema.sql```.
